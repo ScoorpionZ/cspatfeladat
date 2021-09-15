@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+main {
+    display:grid;
+    grid-template-areas:
+        "h h h h"
+        "n n n n"
+        "a a a a"
+        "f f f f"
+        ;
+    grid-gap:10px;
+}
+
+header{
+    grid-area:h;
+}
+
+nav{
+    grid-area:n;
+}
+
+article{
+    grid-area:a;
+}
+
+footer{
+    grid-area:f;
+}
+nav ul{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+}
+img{
+    display: none;
+}
